@@ -130,6 +130,15 @@
 		Don't just adapt to the digital age—thrive in it with Rajpout.Tech
 		</p>
 	    </article>
+		<?php
+		if( have_post()){
+			while(have_posts() ){
+				the_post();
+				the_content();
+			}
+		}
+		?>
+
 	    <?php
 		get_footer();
 		?>
